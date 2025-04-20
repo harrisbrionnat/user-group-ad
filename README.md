@@ -45,10 +45,12 @@ This tutorial outlines how one would create a Sales group within Active Director
 </p>
   <br>
   <br>
-2. Create a new resource group. Call it 'active-directory-rg'. Our VM name will be active-directory-dc. Region will be West US 2. Image will be Windows Server 2022.Size will be Standard_D2s_v3 - 2 vcpus, 8 GiB memory, Then pick a username and password. Check the licensing agreement. 
-Go to the networking tab. Name the vnet active-directory-vnet. Click Review + Create. 
+2. Add the users from the 'Sales' OU to the SalesGroup group. Right-click the SalesGroup. Go to <b>Properties</b> then <b>Members</b>, then <b>Add</b>. Add all of the members.
   <p>
-<img src="https://imgur.com/XrjrPji.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/zRlCRjA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+   <p>
+<img src="https://imgur.com/13Moq7j.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
   <br>
   <br>
