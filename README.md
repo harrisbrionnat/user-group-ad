@@ -54,8 +54,11 @@ This tutorial outlines how one would create a Sales group within Active Director
 </p>
   <br>
   <br>
-3. Our next virtual machine will be a client machine which will connect to the domain controller on Windows Server. Again select <b>Create</b> on the Virtual Machines tab. Put this vm in the same resource group. Name it 'active-directory-client'. Put it in the same region as our other vm (West US 2) the Image will be Windows 10. The size will be: Standard D2s v3 (2 vcpus, 8 GiB memory). Then pick a username and password. Check the licensing agreement. Got to the networking tab and put this vm in the same vm as the one on Windows Server that we just created. Click Review + Create. 
+3. Next Create a file on the C Drive called 'Top-Secret'. Right-click the file. Go to <b>Properties</b> --> <b>Security</b>--><b>Advanced</b>--><b>Disable Inheritance</b>-->. Then click 'disable all inherited permissions'. Then go back to the security tab, click 'Edit', 'Add' and then enter 'SalesGroup.
   <br>
+    <p>
+<img src="https://imgur.com/qz4s1F9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
   <br>
 4. Set the Domain Controller's NIC's Private IP address to static. Go to the Virtual Machines tab, click on active-directory-dc, <b>Networking</b> --> <b>Network Settings</b>. Click on the virtual NIC in the upper middle of the screen. Click <b>ip-config1</b>. Change to private ip setting from dynamic to static
   <br>
