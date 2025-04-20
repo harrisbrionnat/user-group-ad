@@ -54,16 +54,19 @@ This tutorial outlines how one would create a Sales group within Active Director
 </p>
   <br>
   <br>
-3. Next Create a file on the C Drive called 'Top-Secret'. Right-click the file. Go to <b>Properties</b> --> <b>Security</b>--><b>Advanced</b>--><b>Disable Inheritance</b>-->. Then click 'disable all inherited permissions'. Then go back to the security tab, click 'Edit', 'Add' and then enter 'SalesGroup.
+3. Next Create a file on the C Drive called 'Top-Secret'. Right-click the file. Go to <b>Properties</b> --> <b>Security</b>--><b>Advanced</b>--><b>Disable Inheritance</b>-->. Then click 'disable all inherited permissions'. Then go back to the security tab, click 'Edit', 'Add' and then enter 'SalesGroup. Add a .txt file to the 'Top-Secret' folder.
   <br>
     <p>
 <img src="https://imgur.com/qz4s1F9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
   <br>
-4. Set the Domain Controller's NIC's Private IP address to static. Go to the Virtual Machines tab, click on active-directory-dc, <b>Networking</b> --> <b>Network Settings</b>. Click on the virtual NIC in the upper middle of the screen. Click <b>ip-config1</b>. Change to private ip setting from dynamic to static
+4. Create another OU called 'Marketing' along with a Security Group for the OU called 'MarketingGroup'. Create a user in the Marketing OU and add them to the 'MarketingGroup' security group.
   <br>
+    <p>
+<img src="https://imgur.com/ZmiDAak.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
   <br>
-5. For testing purposes, we will disable to Windows Firewall on active-directory-dc. Once logged into the vm, go to the Windows Firewall by right clicking the start menu and clicking <b>Run</b>. Type wf.msc. Click <b>Windows Defender Firewall Properties</b>. Turn the firewall state to 'off' for the Domain, Private, and Public Profile tabs.
+5. Test permissions are successful by logging into active-directory-client as a member of the SalesGroup and then logging in as a member of 'MarketingGroup'.
 </p>
 
 <br />
