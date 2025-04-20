@@ -20,9 +20,9 @@ This tutorial outlines how one would create a Sales group within Active Director
 - Windows Server 2022
 - Windows 10 (21H2)
 
-<h2>High-Level Deployment and Configuration Steps</h2>
+<h2>High-Level Configuration Steps</h2>
 
 - Create a Security Group called 'Sales'
 - Add users to the 'Sales' Group
-- Join the Windows 10 client machine to the Domain Controller on the Windows Server virtual machine
+- Create a shared folder that can only be read and modified by members of the 'Sales Group'
 - Allow non-administrative users to access remote desktop
