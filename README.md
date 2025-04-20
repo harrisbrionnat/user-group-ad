@@ -25,4 +25,4 @@ This tutorial outlines how one would create a Sales group within Active Director
 - Create a Security Group called 'Sales'
 - Add users to the 'Sales' Group
 - Create a shared folder that can only be read and modified by members of the 'Sales Group'
-- Allow non-administrative users to access remote desktop
+- Demonstrate how non-sales users cannot access this file
