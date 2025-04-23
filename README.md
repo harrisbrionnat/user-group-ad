@@ -25,7 +25,7 @@ This tutorial outlines how to create a Sales group within Active Directory and a
 
 ### Creating a 'Sales' Group
 
-1. Create an OU called 'Sales' in **Active Directory Users and Computers**. Right-click, select **New**, and choose **Group**. Name the group 'SalesGroup', set the scope to **Global**, and the type to **Security Groups**. Add 3 users to the OU 'Sales'.
+1. Create an OU called 'Sales' in **Active Directory Users and Computers**. Right-click, select **New**, and choose **Group**. Name the group 'SalesGroup', set the scope to **Global**, and the type to **Security Groups**. Move 3 users from the _EMPLOYEES OU to the OU 'Sales'.
    <p align="center">
      <img src="https://imgur.com/PU5Tohl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    </p>
