@@ -45,8 +45,12 @@ This tutorial outlines how to create a Sales group within Active Directory and a
    <p align="center">
      <img src="https://imgur.com/k9FG1rv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    </p>
+4. Next, map th network drive on active-directory-client. Go to file explorer--> this pc. Right click on 'This pc' go to 'map network drive. Select a drive letter for the current pc. and for the folder name put \\servername\folder (The folder is Top-Secret).
+   <p align="center">
+     <img src="https://imgur.com/AIiYBGC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+   </p>
 
-4. Create another OU called 'Marketing' along with a Security Group for the OU named 'MarketingGroup'. Add the fourth user to the Marketing OU and then add them to the 'MarketingGroup' security group.
+6. Create another OU called 'Marketing' along with a Security Group for the OU named 'MarketingGroup'. Add the fourth user to the Marketing OU and then add them to the 'MarketingGroup' security group.
    <p align="center">
      <img src="https://imgur.com/ZmiDAak.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    </p>
