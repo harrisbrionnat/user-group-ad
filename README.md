@@ -52,8 +52,11 @@ This tutorial outlines how to create a Sales group within Active Directory and a
 
 6. Create another OU called 'Marketing' along with a Security Group for the OU named 'MarketingGroup'. Add the fourth user to the Marketing OU and then add them to the 'MarketingGroup' security group.
    <p align="center">
-     <img src="https://imgur.com/ZmiDAak.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+     <img src="https://imgur.com/IYOPXVY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    </p>
 
-5. Test permissions to ensure they are successful by logging into `active-directory-client` as a member of the SalesGroup or a Domain Admin, then logging in as a member of 'MarketingGroup'.
+5. Test permissions to ensure they are successful by logging into `active-directory-client` as a member of the SalesGroup or a Domain Admin, then logging in as a member of 'MarketingGroup'. You should be able to access the folder with no problem as a member of the SalesGroup or a Domain Admin. As a member of the MarketingGroup your access should be denied when attempting to map the drive with that account.
+ <p align="center">
+     <img src="https://imgur.com/3TW2frC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+   </p>
 
