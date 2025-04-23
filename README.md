@@ -41,7 +41,7 @@ This tutorial outlines how to create a Sales group within Active Directory and a
      <img src="https://imgur.com/13Moq7j.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    </p>
 
-3. Next, create a file on the C Drive called 'Top-Secret'. Go back to the security tab, click **Edit**, **Add**, and enter 'SalesGroup'. Add a `.txt` file to the 'Top-Secret' folder.
+3. Next, create a file on the C Drive called 'Top-Secret'. Go back to the Sharing tab, click on Advanced Sharing, check share this folder, click permissions. Remove 'Everyone'. Click add and type in SalesGroup and Domain Admins. Click ok. Check 'full control' 
    <p align="center">
      <img src="https://imgur.com/qz4s1F9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    </p>
@@ -51,5 +51,5 @@ This tutorial outlines how to create a Sales group within Active Directory and a
      <img src="https://imgur.com/ZmiDAak.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    </p>
 
-5. Test permissions to ensure they are successful by logging into `active-directory-client` as a member of the SalesGroup, then logging in as a member of 'MarketingGroup'.
+5. Test permissions to ensure they are successful by logging into `active-directory-client` as a member of the SalesGroup or a Domain Admin, then logging in as a member of 'MarketingGroup'.
 
