@@ -25,7 +25,7 @@ This tutorial outlines how to create a Sales group within Active Directory and a
 
 ### Creating a 'Sales' Group
 
-1. Create an OU called 'Sales' in **Active Directory Users and Computers**. Right-click, select **New**, and choose **Group**. Name the group 'SalesGroup', set the scope to **Global**, and the type to **Security Groups**. Add users to the OU 'Sales'.
+1. Create an OU called 'Sales' in **Active Directory Users and Computers**. Right-click, select **New**, and choose **Group**. Name the group 'SalesGroup', set the scope to **Global**, and the type to **Security Groups**. Add 3 users to the OU 'Sales'.
    <p align="center">
      <img src="https://imgur.com/PU5Tohl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    </p>
@@ -41,7 +41,7 @@ This tutorial outlines how to create a Sales group within Active Directory and a
      <img src="https://imgur.com/13Moq7j.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    </p>
 
-3. Next, create a file on the C Drive called 'Top-Secret'. Right-click the file and go to **Properties** → **Security** → **Advanced** → **Disable Inheritance**. Choose to disable all inherited permissions. Go back to the security tab, click **Edit**, **Add**, and enter 'SalesGroup'. Add a `.txt` file to the 'Top-Secret' folder.
+3. Next, create a file on the C Drive called 'Top-Secret'. Go back to the security tab, click **Edit**, **Add**, and enter 'SalesGroup'. Add a `.txt` file to the 'Top-Secret' folder.
    <p align="center">
      <img src="https://imgur.com/qz4s1F9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    </p>
