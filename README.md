@@ -41,22 +41,23 @@ This tutorial outlines how to create a Sales group within Active Directory and a
      <img src="https://imgur.com/13Moq7j.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    </p>
 
-3. Next, create a file on the C Drive called 'Top-Secret'. Go back to the Sharing tab, click on Advanced Sharing, check share this folder, click permissions. Remove 'Everyone'. Click add and type in SalesGroup and Domain Admins. Click ok. Check 'full control' 
+3. Next, create a file on the C Drive called 'Top-Secret'. Go back to the Sharing tab, click on **Advanced Sharing**, check **Share this folder**, and click **Permissions**. Remove 'Everyone'. Click **Add** and type in `SalesGroup` and `Domain Admins`. Click **OK** and check **Full Control**.
    <p align="center">
      <img src="https://imgur.com/k9FG1rv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    </p>
-4. Next, map th network drive on active-directory-client. Go to file explorer--> this pc. Right click on 'This pc' go to 'map network drive. Select a drive letter for the current pc. and for the folder name put \\servername\folder (The folder is Top-Secret).
+
+4. Map the network drive on `active-directory-client`. Navigate to **File Explorer** → **This PC**. Right-click on **This PC**, go to **Map network drive**. Select a drive letter for the current PC and for the folder name put `\\servername\Top-Secret`.
    <p align="center">
      <img src="https://imgur.com/AIiYBGC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    </p>
 
-6. Create another OU called 'Marketing' along with a Security Group for the OU named 'MarketingGroup'. Add the fourth user to the Marketing OU and then add them to the 'MarketingGroup' security group.
+5. Create another OU called 'Marketing' along with a Security Group for the OU named `MarketingGroup`. Add the fourth user to the `Marketing` OU and then add them to the `MarketingGroup` security group.
    <p align="center">
      <img src="https://imgur.com/IYOPXVY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    </p>
 
-5. Test permissions to ensure they are successful by logging into `active-directory-client` as a member of the SalesGroup or a Domain Admin, then logging in as a member of 'MarketingGroup'. You should be able to access the folder with no problem as a member of the SalesGroup or a Domain Admin. As a member of the MarketingGroup your access should be denied when attempting to map the drive with that account.
- <p align="center">
+6. Test permissions to ensure they are successful by logging into `active-directory-client` as a member of the `SalesGroup` or a `Domain Admin`. Then log in as a member of `MarketingGroup`. You should be able to access the folder with no problems as a member of the `SalesGroup` or a `Domain Admin`. Access should be denied when attempting to map the drive using an account from `MarketingGroup`.
+   <p align="center">
      <img src="https://imgur.com/3TW2frC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    </p>
 
