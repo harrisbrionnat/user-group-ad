@@ -43,10 +43,10 @@ This tutorial outlines how to create a Sales group within Active Directory and a
 
 3. Next, create a file on the C Drive called 'Top-Secret'. Go back to the Sharing tab, click on Advanced Sharing, check share this folder, click permissions. Remove 'Everyone'. Click add and type in SalesGroup and Domain Admins. Click ok. Check 'full control' 
    <p align="center">
-     <img src="https://imgur.com/qz4s1F9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+     <img src="https://imgur.com/k9FG1rv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    </p>
 
-4. Create another OU called 'Marketing' along with a Security Group for the OU named 'MarketingGroup'. Create a user in the Marketing OU and add them to the 'MarketingGroup' security group.
+4. Create another OU called 'Marketing' along with a Security Group for the OU named 'MarketingGroup'. Add the fourth user to the Marketing OU and then add them to the 'MarketingGroup' security group.
    <p align="center">
      <img src="https://imgur.com/ZmiDAak.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    </p>
