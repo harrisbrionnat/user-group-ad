@@ -2,9 +2,9 @@
   <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-# How to Create and Manage Groups and Users in Active Directory
+# How to Create and Manage Groups and Create a File Share in Active Directory
 
-This tutorial outlines how to create a Sales group within Active Directory and apply permissions to it by creating a security group.
+This tutorial outlines how to create a Sales group within Active Directory and apply permissions to it by creating a security group. It also demonstrates how to create a file share using the group policy object.
 
 ## Environments and Technologies Used
 - Microsoft Azure (Virtual Machines/Compute)
@@ -20,6 +20,7 @@ This tutorial outlines how to create a Sales group within Active Directory and a
 - Add users to the 'Sales' Group
 - Create a shared folder that can only be read and modified by members of the 'Sales Group'
 - Demonstrate how non-sales users cannot access this file
+- Createa file share that only the Sales Group can access
 
 ## Deployment and Configuration Steps
 
